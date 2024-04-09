@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'vazir', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: rgba(0, 126, 72, 0.625);
+    border-radius: 30px;
+    color: #ffff;
+    margin-top:40px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 200px;
+}
+form label{
+    margin-top: 1rem;
+    font-weight: bold;
+}
+form input{
+    padding: 5px ;
+    width: 400px;
+    border: 1px sold #dddd;
+    font-size: 20px;
+    border-radius: 5px;
+}
+form input:focus-visible{
+   border-color: none;
+}
+form button{
+    border: none;
+    background-color: rgba(179, 182, 3, 0.952);
+    color: #ffff;
+    box-shadow: 0px 0px 3px 5px #dc0397b4;
+    align-self: flex-end;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin: 10px;
+    border-radius: 5px;
+}
+form button:hover{
+    cursor: pointer;
+    background-color: rgba(69, 182, 3, 0.952);
+    box-shadow: 0px 0px 3px 5px #dc03c3b4;
+
+}
+.title{
+    padding: 10px;
+    align-self: center;
+}
+table {
+    margin-top: 5rem;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px 0px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  @media screen and (max-width: 719px) {
+    table {
+        font-size: 10px;
+        margin: 2px;
+    }
+    
+    form input{
+        font-size: 10px !important;
+        width: 90%;
+    }
+    form label{
+       font-size: 10px;
+    }
+    .title{
+        font-size: 10px;
+    }
+    form button{
+        font-size: 10px;
+        padding: 10px;
+    }
+  }
+  @media screen and (max-width: 463px) {
+    table{
+        font-size: 6px;
+    }
+  }
+  
